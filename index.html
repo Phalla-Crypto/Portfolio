@@ -50,6 +50,10 @@ h1.font-display,h2.font-display{text-transform:uppercase}
 .skill-pill{display:inline-flex;align-items:center;gap:.6rem;padding:.65rem 1.05rem;border:1px solid var(--line);border-radius:9999px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.012));color:#e2e8f0;font-size:.95rem;font-weight:500;line-height:1;white-space:nowrap;transition:border-color .3s ease,transform .3s ease,color .3s ease}
 .skill-pill:hover{border-color:rgba(34,211,238,.45);color:#fff;transform:translateY(-2px)}
 .gap-2\.5{gap:.625rem}
+/* Confidentiality note callout */
+.data-note{display:flex;align-items:flex-start;gap:.55rem;padding:.65rem .85rem;border-radius:.6rem;border:1px solid rgba(34,211,238,.25);background:rgba(34,211,238,.07);color:#67e8f9;font-size:.78rem;line-height:1.45}
+.data-note svg{width:14px;height:14px;flex:none;margin-top:2px}
+html[data-theme="light"] .data-note{border-color:rgba(8,145,178,.3);background:rgba(8,145,178,.07);color:#0e7490}
 /* Tag pills: consistent, vertically-centered, comfortable padding */
 .flex-wrap.font-mono.text-xs > span{display:inline-flex;align-items:center;line-height:1;padding:.4rem .75rem}
 /* Center the project-card tag row between the thumbnail divider and the title */
@@ -384,8 +388,10 @@ html[data-theme="light"] .theme-toggle:hover{color:#0f172a;border-color:#cbd5e1;
                                         </div>
                                         <p class="font-mono text-xs text-cyan-soft mt-0.5">Apr 2026 &ndash; Present &middot; 4 mos</p>
                                         <ul class="exp-bullets text-sm text-slate-400 mt-2">
-                                            <li>Lead the Business Intelligence team</li>
-                                            <li>Mentor BI interns and set delivery standards</li>
+                                            <li>Lead the BI team, owning data architecture, pipeline strategy, and enterprise reporting company-wide.</li>
+                                            <li>Drive a single source of truth across sales, inventory, and finance for executive decision-making.</li>
+                                            <li>Deliver an automated, self-learning demand forecasting system covering 400+ SKUs at ~90% accuracy.</li>
+                                            <li>Mentor Data Analysts and BI Executives, setting delivery standards, code-review practices, and reporting conventions.</li>
                                         </ul>
                                         <p class="exp-skills text-xs font-semibold text-slate-300">
                                             <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" class="text-slate-400" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12z"/></svg>
@@ -397,8 +403,10 @@ html[data-theme="light"] .theme-toggle:hover{color:#0f172a;border-color:#cbd5e1;
                                         <p class="font-mono text-xs text-slate-500 mt-0.5">Jan 2026 &ndash; Mar 2026 &middot; 3 mos</p>
                                         <p class="font-mono text-xs text-slate-500">Phnom Penh, Cambodia &middot; On-site</p>
                                         <ul class="exp-bullets text-sm text-slate-400 mt-2">
-                                            <li>Developed enterprise Power BI dashboards</li>
-                                            <li>Built the Corporate BI System</li>
+                                            <li>Built the Corporate BI System from the ground up — the platform now serving as the company's single source of truth.</li>
+                                            <li>Developed enterprise Power BI dashboards spanning sales performance, inventory, and finance.</li>
+                                            <li>Engineered data pipelines integrating cross-departmental sources into one unified reporting model.</li>
+                                            <li>Partnered with commercial and operations teams to translate business questions into actionable analytics.</li>
                                         </ul>
                                         <p class="exp-skills text-xs font-semibold text-slate-300">
                                             <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" class="text-slate-400" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12z"/></svg>
@@ -628,7 +636,7 @@ html[data-theme="light"] .theme-toggle:hover{color:#0f172a;border-color:#cbd5e1;
                             <span class="px-2.5 py-1 rounded-md bg-white/5 text-slate-400 border border-line">Python</span>
                         </div>
                         <h3 class="font-display text-xl font-semibold text-white">Insurance Claim Prediction</h3>
-                        <p class="text-sm text-cyan-soft mb-3">AIA Cambodia · actuarial internship</p>
+                        <p class="text-sm text-cyan-soft mb-3">AIA Cambodia · Actuarial Analyst</p>
                         <p class="text-sm text-slate-400 leading-relaxed mb-5">
                             A two-stage ML pipeline: first predict <em>whether</em> a client will claim, then estimate <em>how much</em> for likely claimants. Benchmarked four classifiers and four regressors, with smoking, age and BMI emerging as the dominant cost drivers — useful for pricing and reserving.
                         </p>
@@ -665,6 +673,10 @@ html[data-theme="light"] .theme-toggle:hover{color:#0f172a;border-color:#cbd5e1;
                             <span class="proj-metric"><b class="gradient-text">5</b><span>modeled tables</span></span>
                             <span class="proj-metric"><b class="gradient-text">Live</b><span>revenue vs target</span></span>
                         </div>
+                        <p class="data-note mb-5">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <span>Real company data replaced with randomized sample data to protect confidentiality.</span>
+                        </p>
                         <span class="pdf-link">View deck (PDF)
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </span>
